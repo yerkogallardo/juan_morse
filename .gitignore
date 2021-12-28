@@ -130,3 +130,5 @@ dmypy.json
 
 
 .DS_Store
+static/.DS_Store
+templates/.DS_Store
