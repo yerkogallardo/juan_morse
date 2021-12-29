@@ -1,4 +1,4 @@
 # juan_morse
-JUst ANother Morse - Decoder
+JUst ANother Morse Encoder
 
-Solo es un simple decoder de Morse en Python con implementación en Flask.
+Solo es un simple encoder de Morse en Python con implementación en Flask.
