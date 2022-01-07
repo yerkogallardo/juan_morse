@@ -16,19 +16,14 @@ morse_dict = {
                     }
 
 def traductor_morse(val):
-    separador = []
-    morse = []
+    for i in val:
+        if i in morse_dict:
+            pass
+        else:
+            return(False)
 
-    for x in val:
-        separador.append(x)
-    for s in separador:
-        if s == " ":
-            morse.append("/")
-        elif s in morse_dict:
-            morse.append(morse_dict[s]+" ")
-
-
+    separador = [x for x in val]
+    morse = [morse_dict[s]+" " for s in separador]
     palabra_morse = "".join(morse)
     
     return(palabra_morse)
-

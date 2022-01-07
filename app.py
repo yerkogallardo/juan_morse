@@ -12,6 +12,10 @@ def index():
 @app.route("/encode", methods=["POST", "GET"])
 def encode():
     val = traductor_morse(str(request.form['word_input']))
-    flash(str(request.form['word_input']) + ", se codifica a morse como:")
-    flash(val)
+    
+    if val is False:
+        flash("Ingrese solo letras o números")
+    else:
+        flash(str(request.form['word_input']) + ", se codifica a morse como:")
+        flash(val)
     return render_template("index.html")
