@@ -14,7 +14,7 @@ def encode():
     val = traductor_morse(str(request.form['word_input']))
     
     if val is False:
-        flash("Ingrese solo letras o números")
+        flash("Ingrese solo palabras que contengan letras sin acentos o números, ah y la ñ como n")
     else:
         flash(str(request.form['word_input']) + ", se codifica a morse como:")
         flash(val)
