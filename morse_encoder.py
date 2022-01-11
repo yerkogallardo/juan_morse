@@ -16,13 +16,13 @@ morse_dict = {
                     }
 
 def traductor_morse(val):
-    for i in val:
+    for i in val.lower():               # comprobación de caracteres que no estén en el diccionario
         if i in morse_dict:
             pass
         else:
             return(False)
 
-    separador = [x for x in val]
+    separador = [x for x in val.lower()]
     morse = [morse_dict[s]+" " for s in separador]
     palabra_morse = "".join(morse)
     
